@@ -317,6 +317,7 @@ input {
 }
 #message-box{
     height: 120px;
+    width: 500px;
 }
 .form-card{
     margin-top: 30px;
