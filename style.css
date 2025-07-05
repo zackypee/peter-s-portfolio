@@ -354,5 +354,108 @@ hr{
     text-align: right;
     margin: 0 auto;
     margin-top: 10px;
-
 }
+
+/* media queries  for smartphones */
+.menu-toggle{
+    display: none;
+}
+
+@media (max-width: 767px) { 
+
+    .nav-links {
+        display: none;
+    }
+    .nav p{
+        margin-left: -250px ;
+    }
+    .menu-toggle{
+        position: absolute;
+        display: block;
+        margin-left: 10px;
+    }
+    .box-one{
+        flex-direction: column;
+        gap: 150px;
+    }
+    .con-one h1{
+        font-size: 2.5rem;
+    }
+    .box-one,
+    .box-two {
+        margin-left: -80px;
+    }
+    .con-two{
+        margin-left: 130px;
+       
+    }
+
+    .first-container{
+        height: 900px;
+    }
+    .box-two{
+        position: absolute;
+        margin-top: -450px;
+        margin-left: 20px;
+    }
+
+    /* About Me */
+
+   .box-four{
+    flex-direction: column;
+   }
+   .box-three p{
+    text-align: start;
+    margin-left: 20px;
+    color: #6b7280;
+   }
+   .con{
+    width: 350px;
+    margin-left: 20px;
+   }
+   .con div{
+    margin-left: 125px;
+   }
+
+   /* Expertise */
+   .box-five{
+    flex-direction: column;
+    margin-left: 20px;
+   }
+
+   /* Experience */
+
+   .box-seven {
+    margin-left: -70px;
+   }
+   .fourth-container > div >h1{
+    margin-left: -40px;
+   }
+   .fourth-container{
+    text-align: center;
+   }
+
+   /* Education */
+
+   .playbox{
+    flex-direction: column;
+   }
+
+   /* Contact */
+
+   .box-ten{
+    flex-direction: column;
+    margin-left: 20px;
+   }
+   input{
+    width: 300px;
+   }
+   #message-box{
+    width: 300px;
+   }
+   form button{
+    width: 300px;
+   }
+
+
+ }
