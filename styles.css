@@ -364,23 +364,86 @@ hr{
     display: none;
 }
 
-@media (max-width: 767px) { 
+.fa-xmark {
+  display: none;
+}
 
-    .br-s{
-        display: block;
-    }
 
-    .nav-links {
+@media (max-width: 767px) {
+
+   .br-s{
+    display: block;
+    
+   }
+
+    /* Nav */
+
+     
+    /* Mobile nav menu styles */
+   .nav-links {
         display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 40px; /* adjust based on your nav height */
+        right: 10px;
+        background-color: #f9fafb;
+        width: 180px;
+        border-radius: 5px;
+        box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+        padding: 10px 0;
+        z-index: 1000;
     }
+
+   /* When nav is toggled open */
+   .nav-links.active {
+        display: flex;
+    }
+
+   .nav-links ul {
+        flex-direction: column;
+        gap: 15px;
+        margin: 0;
+        padding: 0 20px;
+    } 
+   .nav-links ul li {
+        margin: 10px 0;
+    }
+
+    /* Hide icon utility class */
+    .hide-icon {
+        display: none !important;
+    }
+
     .nav p{
         margin-left: -250px ;
     }
     .menu-toggle{
         position: absolute;
         display: block;
-        margin-left: 10px;
+        margin-left: 85%;
+        margin-top: 10px;
+        z-index: 999;
     }
+    .menu-toggle i{
+        font-size: 1.8rem;
+        color: #000;
+        cursor: pointer;
+    }
+    .menu-toggle .fa-bars{
+        position: absolute;
+        margin-left: 80%;
+        font-size: 1.5rem;
+        display: block;
+    }
+
+    .menu-toggle .fa-xmark{
+        position: absolute;
+        margin-left: 80%;
+        font-size: 1.5rem;
+        display: non;
+    }
+
+    /* Profile */
     .box-one{
         flex-direction: column;
         gap: 150px;
@@ -388,12 +451,10 @@ hr{
     .con-one h1{
         font-size: 1.8rem;
     }
-    #br-s{
-        display: block;
-    }
+   
     .box-one,
     .box-two {
-        margin-left: -92px;
+        margin-left: -86px;
     }
     .con-one h3{
         font-size: 1.2rem;
@@ -424,7 +485,7 @@ hr{
     .box-two{
         position: absolute;
         margin-top: -400px;
-        margin-left: 8px;
+        margin-left: 10px;
     }
 
     /* About Me */
