@@ -392,24 +392,16 @@ hr{
         margin-left: -92px;
     }
     .con-one h3{
-        font-size: 1rem;
+        font-size: 1.2rem;
         font-weight: 100;
         color: #4b5563;
     }
     .con-one p{
         color: #4b5563;
-        font-size: 0.9rem;
-    }
-    .button-two{
-        width: 160px;
-    }
-    .button-one,
-    .button-two{
-        font-size: 0.7rem;
-
+        font-size: 1rem;
     }
     .con-two{
-        margin-left: 130px;
+        margin-left: 150px;
         height: 250px;
         width: 250px;
         border-radius: 125px;
@@ -442,17 +434,24 @@ hr{
     color: #6b7280;
    }
    .con{
-    width: 350px;
+    width: 90%;
     margin-left: 20px;
    }
    .con div{
-    margin-left: 125px;
+    margin-left: 40%;
    }
 
    /* Expertise */
    .box-five{
     flex-direction: column;
     margin-left: 20px;
+   }
+   .con-six,
+   .con-seven{
+    width: 95%;
+    height: 220px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgb(0, 0, 0, 0.05);
    }
 
    /* Experience */
@@ -471,6 +470,12 @@ hr{
 
    .playbox{
     flex-direction: column;
+   }
+   .box-eight,
+   .box-nine{
+    box-shadow: 0px 5px 15px rgb(0, 0, 0, 0.05) ;
+    width: 90%;
+    margin-left: 20px;
    }
 
    /* Contact */
